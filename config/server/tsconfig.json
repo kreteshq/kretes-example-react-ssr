@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": [
+      "ESNext"
+    ],
+    "allowJs": false,
+    "outDir": "../../dist",
+    "rootDir": "../../",
+    "baseUrl": "../../",
+    "strict": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "app/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": [
+    "*.ts",
+    "../../app/jobs/**.ts",
+    "../../app/routes/**.ts",
+    "../../app/middlewares/**.ts",
+    "../../app/controllers/**.ts",
+    "../../site/_api/**/*.ts",
+  ]
+}

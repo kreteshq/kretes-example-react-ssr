@@ -1,0 +1,14 @@
+{
+  "deploy": {
+    "delete": false,
+    "dest": "DESTINATION",
+    "exclude": [
+      "dist",
+      "node_modules",
+      ".git",
+      "static/upload",
+      "config/default.json"
+    ],
+    "src": "."
+  }
+}

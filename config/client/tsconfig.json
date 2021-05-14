@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "allowJs": false,
+    "outDir": "../../dist",
+    "rootDir": "../../",
+    "baseUrl": "../..",
+    "strict": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "app/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "jsx": "react"
+  },
+  "include": [
+    "*.ts",
+    "*.tsx",
+    "../../app/components/**/*.tsx",
+    "../../app/components/**/*.ts",
+    "../../site/**/*.tsx",
+    "../../site/**/*.ts",
+    "../../site/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
