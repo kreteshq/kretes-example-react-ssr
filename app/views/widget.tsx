@@ -8,9 +8,9 @@ import { dehydrate, Hydrate } from 'react-query/hydration'
 // otherwise a circular dependency
 import { App } from '@/components/App'
 
-export async function render() {
+export async function render(bindings: object) {
   const queryClient = new QueryClient();
-  await queryClient.prefetchQuery('example', () => ({"city":"New York City","ip":"11.11.0.11"}));
+  await queryClient.prefetchQuery('example', () => bindings);
   const dehydratedState = dehydrate(queryClient);
 
   return ReactDOMServer.renderToString(
